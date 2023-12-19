@@ -1,0 +1,4 @@
+/home/irina/course_2/os_lab_5_7/build/CMakeFiles/client.dir
+/home/irina/course_2/os_lab_5_7/build/CMakeFiles/server.dir
+/home/irina/course_2/os_lab_5_7/build/CMakeFiles/edit_cache.dir
+/home/irina/course_2/os_lab_5_7/build/CMakeFiles/rebuild_cache.dir

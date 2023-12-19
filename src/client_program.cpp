@@ -10,7 +10,7 @@ int main() {
     std::cout << "Hello there! Please check out the task commands: " << std::endl;
     std::cout << '\t' << "create id: for creating a new calculation node" << std::endl;
     std::cout << '\t' << "exec id n n1 n2... n: for calculating a sum" << std::endl;
-    std::cout << '\t' << "heartbeat time: for checking node-availabilty" << std::endl;
+    std::cout << '\t' << "pingall: for checking node-availabilty" << std::endl;
     std::cout << '\t' << "kill id: for killing a calculation node" << std::endl;
     BalancedTree tree;
     while ((std::cout << "Please enter your command: ") && (std::cin >> command)) {
@@ -80,8 +80,9 @@ int main() {
             std::string str;
             std::vector<int> not_available;
             for (int i : tree.ids) {
-                std::string answer = node.ping(i);
-                if (answer != "Ok: 1") {
+                std::string message = "ping " + std::to_string(i);
+                answer = node.sendstring(message, i);
+                if (answer == "Error: Parent not found") {
                     not_available.push_back(i);
                 }
             }

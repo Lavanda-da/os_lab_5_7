@@ -98,9 +98,6 @@ class CalculationNode {
                 }
                 catch(int){}
             }
-            else {
-                std::cout << "this\n";
-            }
             return answer;
         }
 

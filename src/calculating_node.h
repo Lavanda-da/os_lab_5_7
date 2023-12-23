@@ -54,10 +54,14 @@ class CalculationNode {
                 std::string child_pid;
                 try {
                     if (isleft) {
+                        int time = 3000;
+                        left.setsockopt(ZMQ_SNDTIMEO, time);
                         send_message(left, "pid");
                         child_pid = receive_message(left);
                     }
                     else {
+                        int time = 3000;
+                        right.setsockopt(ZMQ_SNDTIMEO, time);
                         send_message(right, "pid");
                         child_pid = receive_message(right);
                     }

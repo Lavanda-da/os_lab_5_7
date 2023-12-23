@@ -9,7 +9,7 @@ int main() {
     std::string answer;
     std::cout << "Hello there! Please check out the task commands: " << std::endl;
     std::cout << '\t' << "create id: for creating a new calculation node" << std::endl;
-    std::cout << '\t' << "exec id n n1 n2... n: for calculating a sum" << std::endl;
+    std::cout << '\t' << "exec id string pattern: for searching" << std::endl;
     std::cout << '\t' << "pingall: for checking node-availabilty" << std::endl;
     std::cout << '\t' << "kill id: for killing a calculation node" << std::endl;
     BalancedTree tree;

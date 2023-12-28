@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/control.exe.dir/test/client.cpp.o -o control.exe 

@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/calc.dir/test/server.cpp.o -o calc  -Wl,-rpath,/usr/local/lib /usr/local/lib/libzmq.so 

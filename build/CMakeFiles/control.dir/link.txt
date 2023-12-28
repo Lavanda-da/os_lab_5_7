@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/control.dir/test/client.cpp.o -o control  -Wl,-rpath,/usr/local/lib /usr/local/lib/libzmq.so 
